@@ -1,0 +1,22 @@
+<nav class="nav">
+<h1 class="main-header"> <a  class="seller-logged-in" routerLink = "/"> E-COMM</a></h1>
+<div *ngIf="menuTypes === 'default'" class = "search">
+    <input class = "search-input" type = "text" placeholder="Search for Products">
+    <button class = "search-button">Search</button>
+</div>
+<div [ngSwitch] = "menuTypes">
+    <ul *ngSwitchCase="'default'" class="list">
+        <li class = "list-items" ><a class = "item-color" routerLink = "/">Home</a> </li>
+        <li  class = "list-items"><a class = "item-color" routerLink = "/seller">Seller</a> </li>
+        <li class = "list-items"><a class = "item-color" href="#">Login</a> </li>
+        <li  class = "list-items"><a class = "item-color" href="#">Cart(0)</a> </li>
+    </ul>
+    <ul *ngSwitchCase="'seller'" class="list">
+        <li  class = "list-items"><a class = "item-color" routerLink = "/seller-add-product">Add Product</a> </li>
+        <li class = "list-items" ><a class = "item-color" routerLink = "/seller-home">List</a> </li>
+        <li class = "list-items"><a class = "item-color" (click)="logOut()">Logout</a> </li>
+        <li  class = "list-items"><a class = "item-color" href="#">{{sellerName | titlecase}}</a> </li>
+    </ul>
+</div>
+
+</nav>

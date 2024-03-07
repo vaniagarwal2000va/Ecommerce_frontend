@@ -1,0 +1,11 @@
+.seller-add-product-wrapper {
+  .main-header {
+    color: black;
+    text-align: center;
+    fonr-size: 20px;
+  }
+  .add-product-message {
+    text-align: center;
+    color: green;
+  }
+}

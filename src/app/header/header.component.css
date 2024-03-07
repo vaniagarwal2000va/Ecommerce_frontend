@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  .main-header {
+    color: blueviolet;
+    margin: 0px;
+    font-size: 40px;
+  }
+  .seller-logged-in {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  .search {
+    flex: 1;
+    margin-top: 5px;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    .search-input {
+      flex: 1;
+      color: blueviolet;
+      border: 1px solid blueviolet;
+      height: 35px;
+      border-right: 0px;
+    }
+    .search-button {
+      color: blueviolet;
+      border: 1px solid blueviolet;
+      height: 39px;
+      border-left: 0px;
+    }
+  }
+  .list {
+    display: inline-flex;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    .list-items {
+      padding: 15px 0px 0px 15px;
+      .item-color {
+        text-decoration: none;
+        color: blueviolet;
+      }
+    }
+  }
+}
+
+/* .nav .main-header {
+
+} */
+/* .nav 
+} */

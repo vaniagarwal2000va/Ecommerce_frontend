@@ -1,0 +1,35 @@
+{
+  "seller": [
+    {
+      "id": "2ee4",
+      "name": "vaniexportmssqlserve",
+      "password": "das",
+      "email": "dsadsa"
+    },
+    {
+      "id": "989e",
+      "name": "vani",
+      "password": "12345",
+      "email": "vaniga@gmail.com"
+    },
+    {
+      "id": "f990",
+      "name": "peter",
+      "password": "123456",
+      "email": "peter.england@play.com"
+    },
+    {
+      "id": "1afd",
+      "name": "vaniexportmssqlserve",
+      "password": "play",
+      "email": "12345@avd"
+    },
+    {
+      "id": "fc66",
+      "name": "vaniexportmssqlserve",
+      "password": "wew",
+      "email": "233433@sdfd"
+    }
+  ],
+  "products": []
+}

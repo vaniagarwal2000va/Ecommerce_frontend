@@ -1,0 +1,16 @@
+.seller .seller-signup .seller-header {
+  text-align: center;
+  margin: 80px 0px 50px 0px;
+  color: blueviolet;
+}
+.auth-toggle-link {
+  margin-top: 20px;
+  color: blueviolet;
+  font-size: 14px;
+}
+.login-failed-error {
+  margin-bottom: 10px;
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}

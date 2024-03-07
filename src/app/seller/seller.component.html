@@ -1,0 +1,23 @@
+<div class="seller">
+    <div *ngIf="!showLoginForm" class="seller-signup">
+        <h1 class= "seller-header">Seller Sign-Up </h1>
+        <p class="login-failed-error" *ngIf="isSignUpFailed">User already exists. Please Login</p>
+        <form  #sellerSignForm = "ngForm" (ngSubmit)= "signUp(sellerSignForm.value)"class="common-form">
+            <input class = "form-input"type="text"  ngModel name= "name" placeholder ="Enter Name" />
+            <input class = "form-input" type="password" ngModel name= "password" placeholder ="EnterPassword" />
+            <input  class = "form-input" type="text" ngModel name= "email" placeholder ="Enter Email" />
+            <button class = "form-button">Sign Up </button>
+            <a class="auth-toggle-link" (click) = "showLogin()"> Already have account? Click to login</a> 
+        </form>
+    </div>
+    <div *ngIf="showLoginForm" class="seller-signup">
+        <h1 class= "seller-header">Seller Login</h1>
+        <p class="login-failed-error" *ngIf="isLoginFailed">Incorrect username or password</p>
+        <form  #sellerLoginForm = "ngForm" (ngSubmit)= "login(sellerLoginForm.value)"class="common-form">
+            <input  class = "form-input" type="text" ngModel name= "email" placeholder ="Enter Email" />
+            <input class = "form-input" type="password" ngModel name= "password" placeholder ="EnterPassword" />
+            <button class = "form-button">Login</button>
+            <a class="auth-toggle-link" (click) = "showSignUp()"> Already have account? Click to Sign up</a> 
+        </form>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="seller-add-product-wrapper">
+    <h1 class="main-header">Add Product</h1>
+    <form #addProduct="ngForm" (ngSubmit)="submitProduct(addProduct.value)" class="common-form"> 
+        <input  class = "form-input" type="text" ngModel name= "name" placeholder ="Enter Product Name" />
+        <input  class = "form-input" type="text" ngModel name= "price" placeholder ="Enter Product Price" />
+        <input  class = "form-input" type="text" ngModel name= "color" placeholder ="Enter Product Color" />
+        <input  class = "form-input" type="text" ngModel name= "category" placeholder ="Enter Product Category" />
+        <textarea  class = "form-input" type="text" ngModel name= "description" placeholder ="Enter Product Description"> </textarea>
+        <input  class = "form-input" type="text" ngModel name= "image" placeholder ="Enter Product Image URL" />
+        <button class = "form-button">Add Product</button>
+    </form>
+    <p *ngIf="addProductSuccess" class="add-product-message"> Added Product Successfully </p>
+
+</div>
